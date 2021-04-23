@@ -30,10 +30,10 @@ def main():
      """
     st.markdown(html_temp, unsafe_allow_html=True)
 
-    Year = st.int_input("Year Of Purchase")
+    Year = st.number_input("Year Of Purchase")
     Present_Price = st.number_input("Present Price (in lacs)")
     Kms_Driven = st.number_input("Kms Driven")
-    Owner = st.int_input("Number of owners")
+    Owner = st.number_input("Number of owners")
     
     fueltype = st.selectbox("Select the fuel type", ['Petrol', 'CNG', 'Diesel'])
     
